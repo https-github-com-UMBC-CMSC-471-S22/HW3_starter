@@ -1,0 +1,146 @@
+NIM with heaps [1] using players random and random and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[1], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=-inf, board=[0], moves=[])
+Player 1 wins
+
+
+NIM with heaps [3] using players random and random and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[3], moves=[])
+Player 1 moves (0, 2) ==> GameState(to_move=2, utility=0, board=[1], moves=[])
+Player 2 moves (0, 1) ==> GameState(to_move=1, utility=-inf, board=[0], moves=[])
+Player 2 wins
+
+
+NIM with heaps [1, 1] using players random and random and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[1, 1], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[1, 0], moves=[])
+Player 2 moves (0, 1) ==> GameState(to_move=1, utility=-inf, board=[0, 0], moves=[])
+Player 2 wins
+
+
+NIM with heaps [1, 1] using players ab and ab and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[1, 1], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=0, board=[0, 1], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=-inf, board=[0, 0], moves=[])
+Player 2 wins
+
+
+NIM with heaps [1, 1, 1] using players ab and ab and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[1, 1, 1], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=0, board=[0, 1, 1], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=0, board=[0, 0, 1], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=-inf, board=[0, 0, 0], moves=[])
+Player 1 wins
+
+
+NIM with heaps [1, 1, 1, 1] using players ab and ab and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[1, 1, 1, 1], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=0, board=[0, 1, 1, 1], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=0, board=[0, 0, 1, 1], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=0, board=[0, 0, 0, 1], moves=[])
+Player 2 moves (3, 1) ==> GameState(to_move=1, utility=-inf, board=[0, 0, 0, 0], moves=[])
+Player 2 wins
+
+
+NIM with heaps [2, 2] using players ab and ab and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[2, 2], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=0, board=[1, 2], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=0, board=[1, 1], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=0, board=[0, 1], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=-inf, board=[0, 0], moves=[])
+Player 2 wins
+
+
+NIM with heaps [1, 2, 3] using players ab and ab and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[1, 2, 3], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=0, board=[0, 2, 3], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=0, board=[0, 2, 2], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 1, 2], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=0, board=[0, 1, 1], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 0, 1], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=-inf, board=[0, 0, 0], moves=[])
+Player 2 wins
+
+
+NIM with heaps [1, 2, 3] using players ab and ab1 and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[1, 2, 3], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=0, board=[0, 2, 3], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=0, board=[0, 2, 2], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 1, 2], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=0, board=[0, 1, 1], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 0, 1], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=-inf, board=[0, 0, 0], moves=[])
+Player 2 wins
+
+
+NIM with heaps [1, 2, 3] using players ab and ab1 and heuristic True
+Initial state: GameState(to_move=1, utility=0, board=[1, 2, 3], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=0, board=[0, 2, 3], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=0, board=[0, 2, 2], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 1, 2], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=-5, board=[0, 1, 1], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=5, board=[0, 0, 1], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=-inf, board=[0, 0, 0], moves=[])
+Player 2 wins
+
+
+NIM with heaps [1, 3, 5] using players ab and ab and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[1, 3, 5], moves=[])
+Player 1 moves (2, 3) ==> GameState(to_move=2, utility=0, board=[1, 3, 2], moves=[])
+Player 2 moves (0, 1) ==> GameState(to_move=1, utility=0, board=[0, 3, 2], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 2, 2], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=0, board=[0, 1, 2], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=0, board=[0, 1, 1], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=0, board=[0, 0, 1], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=-inf, board=[0, 0, 0], moves=[])
+Player 1 wins
+
+
+NIM with heaps [3, 4, 5] using players ab1 and ab1 and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[3, 4, 5], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=0, board=[2, 4, 5], moves=[])
+Player 2 moves (0, 1) ==> GameState(to_move=1, utility=0, board=[1, 4, 5], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=0, board=[0, 4, 5], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=0, board=[0, 4, 4], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 3, 4], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=0, board=[0, 3, 3], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 2, 3], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=0, board=[0, 2, 2], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 1, 2], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=0, board=[0, 1, 1], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 0, 1], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=-inf, board=[0, 0, 0], moves=[])
+Player 2 wins
+
+
+NIM with heaps [3, 3, 3] using players ab2 and ab3 and heuristic False
+Initial state: GameState(to_move=1, utility=0, board=[3, 3, 3], moves=[])
+Player 1 moves (0, 3) ==> GameState(to_move=2, utility=0, board=[0, 3, 3], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=0, board=[0, 2, 3], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=0, board=[0, 2, 2], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=0, board=[0, 1, 2], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=0, board=[0, 1, 1], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=0, board=[0, 0, 1], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=-inf, board=[0, 0, 0], moves=[])
+Player 1 wins
+
+
+NIM with heaps [1, 3, 5, 7] using players ab1 and ab1 and heuristic True
+Initial state: GameState(to_move=1, utility=0, board=[1, 3, 5, 7], moves=[])
+Player 1 moves (0, 1) ==> GameState(to_move=2, utility=5, board=[0, 3, 5, 7], moves=[])
+Player 2 moves (1, 1) ==> GameState(to_move=1, utility=0, board=[0, 2, 5, 7], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=5, board=[0, 1, 5, 7], moves=[])
+Player 2 moves (3, 3) ==> GameState(to_move=1, utility=0, board=[0, 1, 5, 4], moves=[])
+Player 1 moves (1, 1) ==> GameState(to_move=2, utility=0, board=[0, 0, 5, 4], moves=[])
+Player 2 moves (2, 1) ==> GameState(to_move=1, utility=0, board=[0, 0, 4, 4], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=0, board=[0, 0, 3, 4], moves=[])
+Player 2 moves (3, 1) ==> GameState(to_move=1, utility=-5, board=[0, 0, 3, 3], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=0, board=[0, 0, 2, 3], moves=[])
+Player 2 moves (3, 1) ==> GameState(to_move=1, utility=0, board=[0, 0, 2, 2], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=0, board=[0, 0, 1, 2], moves=[])
+Player 2 moves (3, 1) ==> GameState(to_move=1, utility=-5, board=[0, 0, 1, 1], moves=[])
+Player 1 moves (2, 1) ==> GameState(to_move=2, utility=5, board=[0, 0, 0, 1], moves=[])
+Player 2 moves (3, 1) ==> GameState(to_move=1, utility=-inf, board=[0, 0, 0, 0], moves=[])
+Player 2 wins
+
+
