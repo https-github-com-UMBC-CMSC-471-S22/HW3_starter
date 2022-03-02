@@ -1,28 +1,39 @@
-#  PUT YOUR NAME ANS UMBC ID HERE
+"""
+Complete the ms() program so that it will try to find a magic square
+of of size n using a CSP solver.  
 
-from constraint import *
-import timeout_decorator
+You will need to install two packages with pip: python-constraint and
+wrapt-timeout-decorator. On gl, you can install packages using the
+user flag:
+
+  pip install --user python-constraint
+  pip install --user wrapt-timeout-decorator
+"""
+
+#  PUT YOUR NAME AND UMBC ID HERE
+
+import constraint as c
+import wrapt_timeout_decorator as t
 import time
 
-@timeout_decorator.timeout(30) # throw exception after 30 seconds
-def ms(n, magic_sum=None, solver=BacktrackingSolver()):
+@t.timeout(30)     # throw exception after 30 seconds
+def ms(n=3, magic_sum=None, solver=c.BacktrackingSolver()):
     """ Solve a magic squares problem for a nxn grid and given
     magic_sum or computing a default magic sum if none is given using
     the given solver """
 
     pass
 
-
 def ms_sizes(sizes):
     """ show time to solve magic square problems of varying sizes using different solvers. """
-    solvers = [BacktrackingSolver, RecursiveBacktrackingSolver, MinConflictsSolver]
+    solvers = [c.BacktrackingSolver, c.RecursiveBacktrackingSolver, c.MinConflictsSolver]
     for n in sizes:
         print(f"\nSize: {n}x{n}\n")
         for s in solvers:
             start_time = time.time()
             try:
                 solution =  ms(n, magic_sum=None, solver=s())
-            except timeout_decorator.TimeoutError:
+            except OSError:
                 # ms function timed out
                 solution = "timeout"
             except:
@@ -32,4 +43,4 @@ def ms_sizes(sizes):
             print(f"{s.__name__}: {solution}; time:{elapsed:.3f}")
 
 if __name__ == "__main__":
-    ms_sizes(range(3,7))
+    ms_sizes(range(3,6))
